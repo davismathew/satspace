@@ -1,0 +1,88 @@
+.about-page {
+    min-height: calc(100vh - var(--header-height));
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-background);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.about-section p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+}
+
+.connect-section {
+    margin-bottom: var(--spacing-xxl);
+    padding: var(--spacing-xl);
+    background: var(--color-background-light);
+    border-radius: 8px;
+}
+
+.connect-section h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.connect-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.connect-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: var(--color-background);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.connect-link:hover {
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: var(--color-primary);
+}
+
+.connect-link .icon {
+    font-size: 1.5rem;
+}
+
+.mission-section {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.mission-section h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.mission-section p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .connect-section {
+        padding: var(--spacing-md);
+    }
+
+    .mission-section p {
+        font-size: 1rem;
+    }
+}

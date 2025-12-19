@@ -1,0 +1,74 @@
+[
+    {
+        "slug": "d2d-ntn-explained",
+        "title": "Direct-to-Device (D2D) & 5G NTN Explained: How Satellites Are Becoming Part of Your Phone Network",
+        "excerpt": "For the first time, regular smartphones can connect directly to satellites—without bulky terminals or dish antennas. Here's how 3GPP's Non-Terrestrial Networks are transforming coverage.",
+        "tags": [
+            "technology",
+            "d2d",
+            "ntn",
+            "5g"
+        ],
+        "category": "Technology",
+        "published_at": "2025-12-20T00:00:00Z",
+        "hero_image_key": "posts/d2d-ntn-explained/hero.jpg",
+        "content_type": "explainer"
+    },
+    {
+        "slug": "multi-orbit-hybrid-future",
+        "title": "From GEO to LEO to Hybrid: Why the Future of SatCom Is Multi-Orbit and Multi-Provider",
+        "excerpt": "The future isn't GEO-only or LEO-only. It's hybrid, multi-orbit, multi-provider, and cloud-integrated. This business model transformation will define the next decade of satellite connectivity.",
+        "tags": [
+            "commercial",
+            "multi-orbit",
+            "strategy",
+            "business-models"
+        ],
+        "category": "Commercial",
+        "published_at": "2025-12-20T00:00:00Z",
+        "hero_image_key": "posts/multi-orbit-hybrid-future/hero.jpg",
+        "content_type": "deep-dive"
+    },
+    {
+        "slug": "satellite-launch-record-2025",
+        "title": "Record-Breaking Year: 2025 Sees Unprecedented Satellite Launches",
+        "excerpt": "The commercial space industry achieved new milestones in 2025 with over 2,500 satellite launches, marking the highest yearly total in history.",
+        "tags": [
+            "commercial",
+            "launch",
+            "industry"
+        ],
+        "category": "Launch",
+        "published_at": "2025-12-15T10:00:00Z",
+        "hero_image_key": "posts/satellite-launch-record-2025/hero.jpg",
+        "content_type": "news"
+    },
+    {
+        "slug": "lunar-habitat-progress",
+        "title": "Lunar Habitat Construction Enters Critical Phase",
+        "excerpt": "International teams report significant progress on the first permanent lunar base, with foundation modules now in place and life support systems undergoing final tests.",
+        "tags": [
+            "lunar",
+            "exploration",
+            "infrastructure"
+        ],
+        "category": "Exploration",
+        "published_at": "2025-12-14T14:30:00Z",
+        "hero_image_key": "posts/lunar-habitat-progress/hero.jpg",
+        "content_type": "news"
+    },
+    {
+        "slug": "space-force-budget-2026",
+        "title": "Space Force Receives $30B Budget for 2026 Operations",
+        "excerpt": "Congress approves substantial funding increase for the U.S. Space Force, focusing on satellite defense and space domain awareness capabilities.",
+        "tags": [
+            "military",
+            "policy",
+            "budget"
+        ],
+        "category": "Military & Government",
+        "published_at": "2025-12-13T09:00:00Z",
+        "hero_image_key": "posts/space-force-budget-2026/hero.jpg",
+        "content_type": "news"
+    }
+]

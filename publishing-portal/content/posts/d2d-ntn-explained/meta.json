@@ -1,0 +1,19 @@
+{
+    "slug": "d2d-ntn-explained",
+    "title": "Direct-to-Device (D2D) & 5G NTN Explained: How Satellites Are Becoming Part of Your Phone Network",
+    "subtitle": "Understanding the technical and strategic shift bringing satellite connectivity to standard smartphones",
+    "excerpt": "For the first time, regular smartphones can connect directly to satellites—without bulky terminals or dish antennas. Here's how 3GPP's Non-Terrestrial Networks are transforming coverage.",
+    "tags": [
+        "technology",
+        "d2d",
+        "ntn",
+        "5g"
+    ],
+    "author": "Davis Mathew Kuriakose",
+    "published_at": "2025-12-20T00:00:00Z",
+    "updated_at": "2025-12-20T00:00:00Z",
+    "hero_image_key": "posts/d2d-ntn-explained/hero.jpg",
+    "reading_time_minutes": 8,
+    "status": "published",
+    "content_type": "explainer"
+}

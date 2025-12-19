@@ -1,0 +1,19 @@
+{
+    "slug": "multi-orbit-hybrid-future",
+    "title": "From GEO to LEO to Hybrid: Why the Future of SatCom Is Multi-Orbit and Multi-Provider",
+    "subtitle": "How the satellite industry is evolving from single-orbit dominance to integrated, application-aware networks",
+    "excerpt": "The future isn't GEO-only or LEO-only. It's hybrid, multi-orbit, multi-provider, and cloud-integrated. This business model transformation will define the next decade of satellite connectivity.",
+    "tags": [
+        "commercial",
+        "multi-orbit",
+        "strategy",
+        "business-models"
+    ],
+    "author": "Davis Mathew Kuriakose",
+    "published_at": "2025-12-20T00:00:00Z",
+    "updated_at": "2025-12-20T00:00:00Z",
+    "hero_image_key": "posts/multi-orbit-hybrid-future/hero.jpg",
+    "reading_time_minutes": 10,
+    "status": "published",
+    "content_type": "deep-dive"
+}
