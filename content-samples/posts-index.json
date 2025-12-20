@@ -1,0 +1,30 @@
+[
+    {
+        "slug": "earth-observation-climate-monitoring",
+        "title": "New Generation of Earth Observation Satellites Transform Climate Monitoring",
+        "excerpt": "Next-generation Earth observation satellites equipped with advanced multispectral sensors are revolutionizing our ability to monitor and understand climate change.",
+        "tags": [
+            "earth-observation",
+            "climate",
+            "satellites",
+            "technology"
+        ],
+        "published_at": "2025-01-18T14:30:00Z",
+        "hero_image_key": "posts/earth-observation-climate-monitoring/hero.jpg",
+        "status": "published"
+    },
+    {
+        "slug": "starlink-expands-global-coverage",
+        "title": "Starlink Expands Global Satellite Coverage to Remote Regions",
+        "excerpt": "Starlink announces major expansion bringing high-speed internet to previously unconnected areas across Africa, Asia, and South America.",
+        "tags": [
+            "satellites",
+            "connectivity",
+            "starlink",
+            "spacex"
+        ],
+        "published_at": "2025-01-15T10:00:00Z",
+        "hero_image_key": "posts/starlink-expands-global-coverage/hero.jpg",
+        "status": "published"
+    }
+]

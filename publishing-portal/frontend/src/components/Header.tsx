@@ -1,43 +1,84 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, Search } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { categories } from "@/lib/data";
 
-const Header = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
-    return (
-        <header className="header">
-            <div className="container header-content">
-                <Link to="/" className="logo">
-                    <h1>SAT<span className="highlight">SPACE</span></h1>
-                    <p className="tagline">Space. Business. Technology.</p>
-                </Link>
+  return (
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto px-4">
+        {/* Main Header */}
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
+          <Link to="/" className="group">
+            <span className="text-2xl font-serif font-bold tracking-tight">
+              SAT<span className="text-primary">SPACE</span>
+            </span>
+          </Link>
 
-                <button
-                    className="mobile-menu-toggle"
-                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    aria-label="Toggle menu"
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-1">
+            {categories.map((category) => (
+              <Link
+                key={category}
+                to={`/category/${category.toLowerCase()}`}
+                className={`px-3 py-2 text-sm font-medium transition-colors hover:text-primary ${location.pathname.includes(category.toLowerCase())
+                  ? "text-primary"
+                  : "text-muted-foreground"
+                  }`}
+              >
+                {category}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Actions */}
+          <div className="flex items-center gap-3">
+            <Button variant="ghost" size="icon" className="hidden md:flex">
+              <Search className="h-5 w-5" />
+            </Button>
+            <Button variant="hero" size="sm" className="hidden sm:flex">
+              Subscribe
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="lg:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="lg:hidden py-4 border-t border-border/40 animate-slide-up">
+            <nav className="flex flex-col gap-2">
+              {categories.map((category) => (
+                <Link
+                  key={category}
+                  to={`/category/${category.toLowerCase()}`}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${location.pathname.includes(category.toLowerCase())
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:bg-accent"
+                    }`}
                 >
-                    ☰
-                </button>
-
-                <nav className={`nav ${mobileMenuOpen ? 'nav-open' : ''}`}>
-                    <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-                    <Link to="/news" className="nav-link" onClick={() => setMobileMenuOpen(false)}>News</Link>
-                    <Link to="/commercial" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Commercial</Link>
-                    <Link to="/technology" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Technology</Link>
-                    <Link to="/policy" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Policy</Link>
-                    <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</Link>
-                </nav>
-
-                <div className="header-actions">
-                    <a href="mailto:davis@satspace.in?subject=Subscribe to SatSpace Signals" className="btn btn-primary">
-                        Subscribe
-                    </a>
-                </div>
-            </div>
-        </header>
-    );
+                  {category}
+                </Link>
+              ))}
+              <Button variant="hero" className="mt-4">
+                Subscribe
+              </Button>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
 };
-
-export default Header;

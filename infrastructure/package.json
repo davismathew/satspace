@@ -1,0 +1,19 @@
+{
+    "name": "satspace-infrastructure",
+    "version": "1.0.0",
+    "description": "AWS CDK infrastructure for SatSpace blog platform",
+    "main": "index.js",
+    "scripts": {
+        "cdk": "cdk",
+        "deploy": "cdk deploy",
+        "synth": "cdk synth",
+        "diff": "cdk diff"
+    },
+    "dependencies": {
+        "aws-cdk-lib": "^2.120.0",
+        "constructs": "^10.3.0"
+    },
+    "devDependencies": {
+        "aws-cdk": "^2.120.0"
+    }
+}
